@@ -1,0 +1,121 @@
+header
+{
+    border-bottom: solid 3px var(--borderColour);
+    background-color: var(--headerFooter);
+    color: var(--lightText);
+    height: 115px;
+}
+header .MuiContainer-root
+{
+    height: 115px;
+}
+header svg
+{
+    color: var(--icon);
+    width: 25px;
+}
+header h1
+{
+    cursor: pointer;
+    max-height: 115px;
+    padding: 5px;
+}
+header h1 img
+{
+    object-fit: scale-down;
+    max-height: 105px;
+}
+
+nav
+{
+    padding: var(--padding);
+}
+nav a
+{
+    color: var(--lightText);
+    margin-right: var(--margin);
+    text-decoration: none;
+}
+
+footer
+{
+    background-color: var(--headerFooter);
+    color: var(--lightText);
+    border-top: solid 3px var(--borderColour);
+}
+
+
+/*---------- Navigation menu ----------*/
+/*----- Slider -----*/
+.navSlider
+{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: var(--darkGrey) !important;
+    padding: calc(var(--padding) + var(--padding));
+    color: var(--lightText);
+    box-sizing: border-box;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: left ease 0.3s;
+}
+.navSlider h2
+{
+    margin: 0;
+    width: 50%;
+}
+.navSlider h2 img
+{
+    width: 100%;
+    height: 90px;
+    object-fit: scale-down;
+}
+.navSlider .nav_head svg
+{
+    width: 50px;
+    height: 50px;
+    color: var(--icon);
+    margin-right: var(--margin);
+    cursor: pointer;
+}
+.navSlider .nav_head
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navSlider ul
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.navSlider ul li
+{
+    list-style-type: none;
+    margin-bottom: calc(var(--margin) + var(--margin));
+}
+.navSlider ul li a
+{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--lightText);
+}
+.navOpen
+{
+    left: 0 !important;
+}
+
+
+
+
+
+nav .active, .navSlider .active
+{
+    text-decoration: underline;
+}

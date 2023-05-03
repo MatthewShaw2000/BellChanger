@@ -1,0 +1,36 @@
+header
+{
+  grid-area: header;
+}
+main
+{
+  grid-area: main;
+}
+footer
+{
+  grid-area: footer;
+}
+
+.App_container
+{
+  text-align: center;
+  display: grid;
+  grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+.stopScroll
+{
+  overflow-y: hidden;
+}
+
+hr
+{
+    background-color: var(--darkRed);
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: var(--borderRadius);
+}

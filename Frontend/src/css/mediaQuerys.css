@@ -1,0 +1,22 @@
+@media screen and (min-width: 600px)
+{
+    canvas
+    {
+        grid-area: canvas;
+    }
+    .user_controls
+    {
+        grid-area: controls;
+    }
+
+    
+    
+    .canvas_container
+    {
+        display: grid;
+        grid-template-areas: 
+            'controls canvas';
+        grid-template-columns: 35% 55%;
+        gap: 10px;
+    }
+}

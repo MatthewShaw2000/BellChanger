@@ -1,0 +1,11 @@
+footer
+{
+    background-color: var(--headerFooter);
+    color: var(--lightText);
+    border-top: solid 3px var(--borderColour);
+    text-align: center;
+}
+footer p
+{
+    margin: 0;
+}

@@ -1,0 +1,65 @@
+header
+{
+    border-bottom: solid 3px var(--borderColour);
+    background-color: var(--headerFooter);
+    color: var(--lightText);
+    height: 115px;
+}
+header .container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header svg
+{
+    fill: var(--icon);
+    width: 25px;
+}
+header h1
+{
+    margin: 0;
+    cursor: pointer;
+    max-height: 115px;
+    padding: 5px;
+    text-align: center;
+}
+header h1 img
+{
+    object-fit: scale-down;
+    max-height: 105px;
+}
+.menu_svg
+{
+    display: none;
+    cursor: pointer;
+}
+.login_svg
+{
+    margin-left: auto;
+}
+
+@media screen and (max-width: 899px)
+{
+    .menu_svg
+    {
+        grid-area: menu;
+        display: block;
+    }
+    .login_svg
+    {
+        grid-area: login;
+        margin-left: auto;
+    }
+    header h1
+    {
+        grid-area: title;
+    }
+    header .container
+    {
+        display: grid;
+        grid-template-areas: 
+            'menu title login';
+    }
+}

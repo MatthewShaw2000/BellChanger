@@ -1,0 +1,344 @@
+/*---------- Home page ----------*/
+/*----- Slider Section component -----*/
+.slider_container
+{
+    width: 100%;
+    height: auto;
+    color: var(--lightText);
+    padding-bottom: var(--padding);
+}
+
+.slider_container .slider_inner_container
+{
+    width: 100%;
+    height: 320px;
+    box-sizing: border-box;
+    background-color: var(--darkGrey);
+    padding-top: var(--padding);
+}
+
+.carousel.carousel-slider .control-arrow
+{
+    color: var(--icon);
+    z-index: 10;
+}
+
+.slider_container .slider_inner_container img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+}
+.carousel-root
+{
+    box-sizing: border-box;
+}
+
+
+/*----- About Section Component -----*/
+.about_section
+{
+    padding: var(--padding);
+    color: var(--darkText);
+}
+
+.about_section h2
+{
+    margin-top: 0;
+}
+
+
+/*----- Collection Section Component -----*/
+.collection_section
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: var(--margin);
+}
+
+.collection_section .collection_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/*---------- Method List page ----------*/
+/*----- Method List header -----*/
+.methodList_header
+{
+    text-align: left;
+    color: var(--darkText);
+}
+
+/*----- Filter -----*/
+.filter
+{
+    max-width: 100%;
+    background-color: var(--item);
+    color: var(--darkText);
+    border: solid 2px var(--borderColour);
+    border-radius: var(--borderRadius);
+    margin-bottom: var(--margin);
+    padding: var(--padding);
+}
+
+.collapsed_Filter
+{
+    height: 45px;
+    overflow-y: hidden;
+}
+
+.rotate_Arrow
+{
+    rotate: 180deg;
+}
+
+.filter h3
+{
+    margin: var(--padding);
+    text-align: left;
+}
+
+.filter h3:hover
+{
+    cursor: pointer;
+}
+
+.filter .MuiBox-root
+{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none !important;
+}
+
+.filter .MuiFormControl-root
+{
+    margin: auto !important;
+    margin-top: var(--margin) !important;
+    margin-bottom: var(--margin) !important;
+    width: 200px !important;
+    border-radius: 50px;
+}
+
+.filter label
+{
+    color: var(--darkText) !important;
+}
+
+.filter .MuiSelect-select, .filter input
+{
+    color: var(--darkText) !important;
+    background-color: var(--bodyBackground) !important;
+}
+
+/*----- Paginate -----*/
+.navigation_Buttons
+{
+    width: 80%;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: calc(var(--margin) * 2);
+    margin-bottom: var(--margin);
+    padding-left: 0;
+}
+
+.navigation_Buttons a
+{
+    padding: var(--padding);
+    margin: 8px;
+    color: var(--darkText);
+    cursor: pointer;
+}
+
+.navigation_Buttons a:hover
+{
+    color: var(--lightText);
+    background-color: var(--headerFooter);
+    border-radius: var(--borderRadius);
+}
+
+.navigation_Active a
+{
+    color: var(--lightText);
+    background-color: var(--headerFooter);
+    border-radius: var(--borderRadius);
+    font-weight: bolder;
+}
+
+.navigation_Disabled a
+{
+    display: none;
+}
+
+/*----- List section -----*/
+.list_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*---------- Collections and methods in a list ----------*/
+.item
+{
+    background-color: var(--item);
+    color: var(--darkText);
+    border: solid 2px var(--borderColour);
+    border-radius: var(--borderRadius);
+    margin: auto;
+    width: 285px;
+    margin-bottom: var(--margin);
+    padding: var(--padding);
+    box-sizing: border-box;
+}
+.item h3, .item h4
+{
+    color: var(--darkText);
+    text-decoration: none;
+    cursor: pointer;
+}
+.item a
+{
+    text-decoration: none;
+}
+
+
+
+
+
+/*---------- Method single page ----------*/
+/*----- Canvas -----*/
+canvas
+{
+    width: 100%;
+    background-color: var(--canvas);
+    border-radius: var(--borderRadius);
+    margin-bottom: var(--margin);
+}
+
+/*----- Controls -----*/
+.controls_Container, .settings_container
+{
+    background-color: var(--darkGrey);
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+    height: fit-content;
+    color: var(--lightText);
+    margin-bottom: var(--margin);
+}
+.controls_Container .controls
+{
+    display: flex;
+    justify-content: space-around;
+}
+.controls_Container .controls svg
+{
+    color: var(--icon);
+    width: 35px;
+    height: 35px;
+}
+
+/*- Slider -*/
+.controls_Container .MuiSlider-root
+{
+    color: var(--canvas)
+}
+
+/*- Dropdown -*/
+.controls_Container .MuiInputBase-root
+{
+    margin-bottom: var(--margin);
+    width: 150px;
+}
+.controls_Container .MuiSelect-select
+{
+    color: var(--darkText) !important;
+    background-color: var(--bodyBackground) !important;
+}
+
+/*----- Settings -----*/
+.settings_container .Mui-checked
+{
+    color: var(--icon) !important;
+}
+/*- controller link buttons -*/
+.settings_container .controller_button
+{
+    background-color: var(--darkRed);
+    color: var(--lightText);
+    border-radius: var(--borderRadius);
+    padding: var(--padding);
+    width: 100px;
+    margin: auto;
+}
+.settings_container .MuiFormControlLabel-root
+{
+    margin-bottom: var(--margin);
+}
+
+
+
+
+
+/*---------- Call Changes Page ----------*/
+/*----- Call chnages input -----*/
+.changes_input
+{
+    max-width: 100%;
+    width: 100%;
+}
+.changes_input .MuiInputBase-root
+{
+    background-color: var(--bodyBackground);
+    color: var(--darkText);
+    margin-bottom: var(--margin);
+}
+.changes_input .changes_settings
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+/*---------- Loader ----------*/
+.loader
+{
+    margin: auto;
+    margin-bottom: var(--margin);
+    border-radius: 100%;
+    border-top: solid 2px #1100fd;
+    border-left: solid 2px #FFFFFF;
+    border-right: solid 2px #FFFFFF;
+    border-bottom: solid 2px #bd0000;
+    padding: var(--padding);
+    transform: rotate(160deg);
+    animation: spin 10s linear infinite;
+}
+.loader svg
+{
+    width: 100px;
+    height: 100px;
+    color: #a19f06;
+}
+@keyframes spin
+{
+    0% {transform: rotate(180deg);}
+    50% {transform: rotate(-180deg);}
+    100% {transform: rotate(180deg);}
+}
