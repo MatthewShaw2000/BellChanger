@@ -753,7 +753,7 @@ document.addEventListener('DOMContentLoaded', () =>
                 {
                     playing = true;
                     draw();
-                }, 150);
+                }, 300);
             }
             else if (row >= numRows) {
                 playing = false;
