@@ -1,13 +1,13 @@
 # Install instructions
-Make sure that node js is installed on your device.
+- Make sure that node js is installed on your device.
 
-The frontend should be downloaded into a folder and make sure the command prompt or terminal is
-in the files directory.
+- The frontend should be downloaded into a folder and make sure the command prompt or terminal is in the files directory.
 
-Open in a editor of your choosing such as visual studio code and in the terminal or command
-prompt type 'npm install' to install the node modules this may take a while.
+- Open in a editor of your choosing such as visual studio code and in the terminal or command prompt type 'npm install' to install the node modules this may take a while.
 
-After the install is complete in the same directory type 'npm run' this will start the project.
+- After the install is complete in the same directory type 'npm run' this will start the project.
+
+- At present the links to the method page and call changes page do not work if you are running the code on your device, however it does work on the delployed version: http://unn-w20013772.newnumyspace.co.uk/Year3/KV6003/Frontend/
 
 
 # KV6003 Bell changer
