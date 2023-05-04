@@ -52,7 +52,7 @@ class Methods extends Endpoints
 
         if(filter_has_var(INPUT_GET, 'method_id') && filter_var($_GET['method_id'], FILTER_VALIDATE_INT))
         {
-            $sql .= " WHERE method_id = :method_id";
+            $sql .= " WHERE methods.method_id = :method_id";
             $params[':method_id'] = $_GET['method_id'];
         }
 
