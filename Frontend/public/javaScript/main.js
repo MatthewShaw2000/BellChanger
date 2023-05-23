@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', async () =>
             settings.innerHTML += '<label for="interact"><input type="checkbox" id="interact" name="interact">Interact Yes/No</label>';
             settings.innerHTML += '<div class="button_container">' +
                 '<div class="settings_button" id="info_button">Info</div>'+
-                '<div class="settings_button"><a href="http://unn-w20013772.newnumyspace.co.uk/Year3/KV6003/Frontend/diagram.html?type=diagram">Diagram</a></div>' +
+                '<div class="settings_button"><a href="http://localhost:3000/diagram.html?type=diagram">Diagram</a></div>' +
                 '</div>';
         }
 
